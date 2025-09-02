@@ -6,8 +6,7 @@ Welcome to your first WhatsApp chatbot tutorial! In this tutorial, you'll set up
 
 - How to set up your Openlyne API credentials
 - How to install the required dependencies
-- How to send your first WhatsApp message
-- How to handle basic errors
+- How to send your first WhatsApp message with a simple script
 
 ## Prerequisites
 
@@ -52,7 +51,7 @@ npm install axios dotenv
 
 ## Step 4: Send Your First Message
 
-Now you're ready to send your first WhatsApp message! You can use either the Python or JavaScript version below.
+Now you're ready to send your first WhatsApp message! Use either the Python or JavaScript version below. Both scripts are simple and print the API response directly.
 
 ### Python Version
 
@@ -76,7 +75,7 @@ node setup.js
 
 ## Expected Output
 
-If everything works correctly, you should see something like:
+If everything works correctly, you should see the API response printed in your console, similar to:
 ```json
 {
     "success": true,
@@ -96,19 +95,12 @@ Want to see how a real chatbot responds? Send a message to **+254101886585** and
 
 **"Invalid API key"**
 - Double-check your API key in the `.env` file
-- Make sure there are no extra spaces or quotes
 
 **"Project ID not found"**
 - Verify your Project ID is correct
-- Make sure you're using the right project
-
-**"Phone number invalid"**
-- Use E.164 format: 254101886585
-- Make sure the country code is supported
 
 **"Module not found"**
 - Run the install commands again
-- Make sure you're in the right directory
 
 ### Still Having Issues?
 
