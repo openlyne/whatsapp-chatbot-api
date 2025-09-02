@@ -1,0 +1,52 @@
+whatsapp-chatbot-api/
+├── README.md                           # This file
+├── LICENSE                             # License information
+├── .env.example                        # Environment variables template
+├── .gitignore                         # Git ignore rules
+├── 01-getting-started/                # Tutorial 1: Setup and first message
+│   ├── README.md                      # Step-by-step instructions
+│   ├── setup.py                       # Python version
+│   └── setup.js                       # JavaScript version
+├── 02-send-messages/                  # Tutorial 2: Sending messages
+│   ├── README.md
+│   ├── send-message.py
+│   └── send-message.js
+├── 03-receive-messages/               # Tutorial 3: Receiving messages
+│   ├── README.md
+│   ├── webhook.py
+│   └── webhook.js
+├── 04-message-types/                  # Tutorial 4: Media and file types
+│   ├── README.md
+│   ├── media-messages.py
+│   └── media-messages.js
+├── 05-interactive-messages/           # Tutorial 5: Buttons and menus
+│   ├── README.md
+│   ├── interactive.py
+│   └── interactive.js
+├── 06-error-handling/                 # Tutorial 6: Error handling
+│   ├── README.md
+│   ├── error-handling.py
+│   └── error-handling.js
+├── 07-webhook-security/               # Tutorial 7: Security
+│   ├── README.md
+│   ├── secure-webhook.py
+│   └── secure-webhook.js
+├── 08-deploy-your-bot/               # Tutorial 8: Deployment
+│   ├── README.md
+│   ├── deploy.py
+│   └── deploy.js
+├── 09-advanced-features/             # Tutorial 9: Advanced topics
+│   ├── README.md
+│   ├── advanced.py
+│   └── advanced.js
+├── examples/                         # Complete example projects
+│   ├── echo-bot/
+│   │   ├── echo-bot.py
+│   │   └── echo-bot.js
+│   └── customer-support-bot/
+│       ├── support-bot.py
+│       └── support-bot.js
+└── docs/                            # Additional documentation
+    ├── api-reference.md
+    ├── troubleshooting.md
+    └── best-practices.md
