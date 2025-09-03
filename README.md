@@ -62,13 +62,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 response = requests.post(
-    "https://api.openlyne.com/v1/sendMessage",
+    "https://api.openlyne.com/v1/sendText",
     headers={
         "x-api-key": os.getenv("OPENLYNE_API_KEY"),
         "Content-Type": "application/json"
     },
     json={
-        "phone_number": "+254101886585",
+    "phone_number": "256XXXXXXXXXX",
         "message": "Hello from Openlyne!",
         "project_id": os.getenv("PROJECT_ID")
     }
@@ -85,9 +85,9 @@ const axios = require('axios');
 async function sendMessage() {
     try {
         const response = await axios.post(
-            'https://api.openlyne.com/v1/sendMessage',
+            'https://api.openlyne.com/v1/sendText',
             {
-                phone_number: '+254101886585',
+                phone_number: '256XXXXXXXXXX',
                 message: 'Hello from Openlyne!',
                 project_id: process.env.PROJECT_ID
             },
@@ -133,13 +133,13 @@ Each tutorial folder contains:
 All API requests require an `x-api-key` header:
 
 ```bash
-curl -X POST "https://api.openlyne.com/v1/sendMessage" \
+curl -X POST "https://api.openlyne.com/v1/sendText" \
   -H "x-api-key: your_api_key_here" \
   -H "Content-Type: application/json"
 ```
 
 ### Key Endpoints
-- `POST /sendMessage` - Send a WhatsApp message
+- `POST /sendText` - Send a WhatsApp message
 - `GET /status` - Check connection and device status  
 - `GET /messages` - Retrieve message history
 - `POST /webhook` - Configure webhook for incoming messages
@@ -225,7 +225,7 @@ whatsapp-chatbot-api/
 
 ## Testing
 
-Try the example chatbot by sending a WhatsApp message to **+254101886585** to see how responses work in practice.
+Try the example chatbot by sending a WhatsApp message to **256XXXXXXXXXX** to see how responses work in practice.
 
 ## Contributing
 
@@ -259,8 +259,8 @@ We welcome contributions! Please follow these steps:
 
 - **Documentation:** [openlyne.com/docs](https://openlyne.com/docs)
 - **Support Email:** sales@openlyne.com
-- **WhatsApp Support:** +254101886585
-- **Example Bot:** Send a message to +254101886585
+- **WhatsApp Support:** 256XXXXXXXXXX
+- **Example Bot:** Send a message to 256XXXXXXXXXX
 
 ## License
 
@@ -270,4 +270,4 @@ The Openlyne API has its own terms of service available at [openlyne.com/terms](
 
 ---
 
-**Questions?** Contact us at sales@openlyne.com or try our example bot at +254101886585.
+**Questions?** Contact us at sales@openlyne.com or try our example bot at 256XXXXXXXXXX.

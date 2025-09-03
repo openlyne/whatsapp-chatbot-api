@@ -1,126 +1,150 @@
-# Tutorial 01: Getting Started
 
-Welcome to your first WhatsApp chatbot tutorial! In this tutorial, you'll set up your development environment and send your very first WhatsApp message using the Openlyne API.
+# WhatsApp Chatbot API: Quickstart
 
-## What You'll Learn
+Welcome! This guide helps you send your first WhatsApp message using the Openlyne API. Follow these steps to get started quickly.
 
-- How to set up your Openlyne API credentials
-- How to install the required dependencies
-- How to send your first WhatsApp message with a simple script
+## Overview
+
+- Set up your Openlyne API credentials
+- Install dependencies
+- Send your first WhatsApp message (Python, JavaScript, or curl)
+
+---
 
 ## Prerequisites
 
-- Python 3.7+ OR Node.js 14+
-- A text editor (VS Code, Sublime, etc.)
-- An Openlyne API account ([sign up here](https://openlyne.com))
+- Python 3.7+ or Node.js 14+
+- Text editor (VS Code recommended)
+- Openlyne API account ([sign up](https://openlyne.com))
 
-## Step 1: Get Your API Credentials
+---
 
-1. Go to [openlyne.com](https://openlyne.com) and sign up for an account
-2. Once logged in, navigate to your dashboard
-3. Copy your **API Key** (starts with `ol_`)
-4. Copy your **Project ID**
+## 1. Get API Credentials
 
-Keep these safe - you'll need them in the next step!
+1. Sign up at [openlyne.com](https://openlyne.com)
+2. Go to your dashboard
+3. Copy your API Key (starts with `ol_`)
+4. Copy your Project ID
 
-## Step 2: Set Up Environment Variables
+---
 
-Create a `.env` file in the root of this repository:
+## 2. Configure Environment Variables
 
-```bash
-# .env
+Create a `.env` file in your project root:
+
+```env
 OPENLYNE_API_KEY=your_api_key_here
 PROJECT_ID=your_project_id_here
 ```
 
-**Important:** Never commit your `.env` file to git! It contains your secret API key.
+> **Note:** Never commit `.env` files to git.
 
-## Step 3: Install Dependencies
+---
 
-Choose your preferred language:
+## 3. Install Dependencies
 
-### For Python:
+**Python:**
+
 ```bash
 pip install requests python-dotenv
 ```
 
-### For JavaScript:
+**JavaScript:**
+
 ```bash
 npm install axios dotenv
 ```
 
-## Step 4: Send Your First Message
+---
 
-Now you're ready to send your first WhatsApp message! Use either the Python or JavaScript version below. Both scripts are simple and print the API response directly.
+## 4. Send Your First Message
 
-### Python Version
+Choose one of the following methods:
 
-Run the Python script:
+### Python
+
 ```bash
 python setup.py
 ```
 
-### JavaScript Version
+### JavaScript
 
-Run the JavaScript script:
 ```bash
 node setup.js
 ```
 
-## Step 5: Test It!
+### Curl
 
-1. Run your chosen script
-2. Check the console output - you should see a success response
-3. Check your WhatsApp - you should receive the test message!
+```bash
+curl -X POST https://api.openlyne.com/v1/sendText \
+    -H "x-api-key: your_api_key_here" \
+    -H "Content-Type: application/json" \
+    -d '{
+    "phone_number": "256XXXXXXXXXX",
+        "message": "Hello from my first WhatsApp bot!",
+        "project_id": "your_project_id_here"
+    }'
+```
 
-## Expected Output
+---
 
-If everything works correctly, you should see the API response printed in your console, similar to:
+## 5. Check the Response
+
+If successful, you'll see:
+
 ```json
 {
     "success": true,
-    "message_id": "msg_12345",
-    "status": "sent",
-    "timestamp": "2025-01-01T12:00:00Z"
+    "data": { /* details about the sent message */ },
+    "message": "sent"
 }
 ```
 
-## Try the Example Bot
+If there's an error:
 
-Want to see how a real chatbot responds? Send a message to **+254101886585** and see it in action!
+```json
+{
+    "success": false,
+    "data": { /* error details */ }
+}
+```
+
+---
+
+## Example Bot
+
+Send a WhatsApp message to **256XXXXXXXXXX** to see a demo bot in action.
+
+---
 
 ## Troubleshooting
 
-### Common Issues:
+**Invalid API key:**
+- Check your API key in `.env`
 
-**"Invalid API key"**
-- Double-check your API key in the `.env` file
+**Project ID not found:**
+- Verify your Project ID
 
-**"Project ID not found"**
-- Verify your Project ID is correct
+**Module not found:**
+- Reinstall dependencies
 
-**"Module not found"**
-- Run the install commands again
+> For more help, see the [troubleshooting guide](../docs/troubleshooting.md) or contact support.
 
-### Still Having Issues?
+---
 
-- Contact support: sales@openlyne.com
-- Try the example bot: +254101886585
-- Check the [troubleshooting guide](../docs/troubleshooting.md)
+## Next Steps
 
-## What's Next?
+Explore more features:
+- Send different message types
+- Format messages
+- Send to multiple recipients
 
-Great job! You've successfully sent your first WhatsApp message. 
+Continue to [Tutorial 02: Send Messages](../02-send-messages/)
 
-In the next tutorial, you'll learn:
-- Different types of messages you can send
-- How to format messages nicely
-- How to send messages to multiple recipients
+---
 
-**Continue to [Tutorial 02: Send Messages](../02-send-messages/)**
+## Support
 
-## Need Help?
-
-- **Email Support:** sales@openlyne.com
-- **WhatsApp Support:** +254101886585
-- **Documentation:** [openlyne.com/docs](https://openlyne.com/docs)
+- Email: sales@openlyne.com
+- WhatsApp: 256XXXXXXXXXX
+- Docs: [openlyne.com/docs](https://openlyne.com/docs)

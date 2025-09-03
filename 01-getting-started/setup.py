@@ -12,13 +12,13 @@ def main():
     load_dotenv()
     api_key = os.getenv('OPENLYNE_API_KEY')
     project_id = os.getenv('PROJECT_ID')
-    url = "https://api.openlyne.com/v1/sendMessage"
+    url = "https://api.openlyne.com/v1/sendText"
     headers = {
         "x-api-key": api_key,
         "Content-Type": "application/json"
     }
     data = {
-        "number": "254101886585", # Replace with the recipient's phone number in international format
+            "number": "256XXXXXXXXXX", # Replace with the recipient's phone number in international format
         "message": "Hello from my first WhatsApp bot!",
         "project_id": project_id
     }
