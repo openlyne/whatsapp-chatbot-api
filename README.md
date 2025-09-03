@@ -112,8 +112,8 @@ sendMessage();
 Follow these tutorials in order to build your WhatsApp chatbot skills:
 
 - [**01. Getting Started**](./01-getting-started/) - Set up your development environment and send your first message
-- [**02. Send Messages**](./02-send-messages/) - Learn different ways to send text messages
-- [**03. Receive Messages**](./03-receive-messages/) - Handle incoming messages with webhooks
+- [**02. Send Messages**](./02-send-message/) - Learn different ways to send text messages
+- [**03. Receive Messages**](./03-receive-message/) - Handle incoming messages with webhooks
 - [**04. Message Types**](./04-message-types/) - Work with images, documents, and media files
 - [**05. Interactive Messages**](./05-interactive-messages/) - Add buttons, lists, and quick replies
 - [**06. Error Handling**](./06-error-handling/) - Handle errors and edge cases gracefully
