@@ -2,6 +2,10 @@
 
 A collection of tutorials for building WhatsApp chatbots using the Openlyne API in Python and JavaScript.
 
+[![API Status](https://img.shields.io/badge/API-Alpha-orange)](https://api.openlyne.com)
+[![Support](https://img.shields.io/badge/Support-Email-blue)](mailto:sales@openlyne.com)
+[![Countries](https://img.shields.io/badge/Countries-7-green)](#supported-countries)
+
 ## Overview
 
 This repository provides step-by-step tutorials for developers who want to build WhatsApp chatbots using the [Openlyne API](https://openlyne.com). The tutorials are available in both Python and JavaScript, covering everything from basic message sending to advanced automation workflows.
