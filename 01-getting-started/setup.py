@@ -18,7 +18,7 @@ def main():
         "Content-Type": "application/json"
     }
     data = {
-            "number": "256XXXXXXXXXX", # Replace with the recipient's phone number in international format
+        "number": "256XXXXXXXXXX", # Replace with the recipient's phone number in international format
         "message": "Hello from my first WhatsApp bot!",
         "project_id": project_id
     }

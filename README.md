@@ -151,71 +151,30 @@ curl -X POST "https://api.openlyne.com/v1/sendText" \
 
 For complete API documentation, visit [openlyne.com/docs](https://openlyne.com/docs).
 
-## Repository Structure
+## Roadmap
 
-```
-whatsapp-chatbot-api/
-├── README.md                           # This file
-├── LICENSE                             # License information
-├── .env.example                        # Environment variables template
-├── .gitignore                         # Git ignore rules
-├── 01-getting-started/                # Tutorial 1: Setup and first message
-│   ├── README.md                      # Step-by-step instructions
-│   ├── setup.py                       # Python version
-│   └── setup.js                       # JavaScript version
-├── 02-send-messages/                  # Tutorial 2: Sending messages
-│   ├── README.md
-│   ├── send-message.py
-│   └── send-message.js
-├── 03-receive-messages/               # Tutorial 3: Receiving messages
-│   ├── README.md
-│   ├── webhook.py
-│   └── webhook.js
-├── 04-message-types/                  # Tutorial 4: Media and file types
-│   ├── README.md
-│   ├── media-messages.py
-│   └── media-messages.js
-├── 05-interactive-messages/           # Tutorial 5: Buttons and menus
-│   ├── README.md
-│   ├── interactive.py
-│   └── interactive.js
-├── 06-error-handling/                 # Tutorial 6: Error handling
-│   ├── README.md
-│   ├── error-handling.py
-│   └── error-handling.js
-├── 07-webhook-security/               # Tutorial 7: Security
-│   ├── README.md
-│   ├── secure-webhook.py
-│   └── secure-webhook.js
-├── 08-deploy-your-bot/               # Tutorial 8: Deployment
-│   ├── README.md
-│   ├── deploy.py
-│   └── deploy.js
-├── 09-advanced-features/             # Tutorial 9: Advanced topics
-│   ├── README.md
-│   ├── advanced.py
-│   └── advanced.js
-├── examples/                         # Complete example projects
-│   ├── echo-bot/
-│   │   ├── echo-bot.py
-│   │   └── echo-bot.js
-│   └── customer-support-bot/
-│       ├── support-bot.py
-│       └── support-bot.js
-└── docs/                            # Additional documentation
-    ├── api-reference.md
-    ├── troubleshooting.md
-    └── best-practices.md
-```
+- [x] 01. Getting Started — Setup and send your first message
+- [ ] 02. Send Messages — Different ways to send text
+- [ ] 03. Receive Messages — Handle incoming messages (webhooks)
+- [ ] 04. Message Types — Images, documents, and media
+- [ ] 05. Interactive Messages — Buttons, lists, quick replies
+- [ ] 06. Error Handling — Graceful error handling and retries
+- [ ] 07. Webhook Security — Secure your endpoints
+- [ ] 08. Deploy Your Bot — Ship to production
+- [ ] 09. Advanced Features — Templates, analytics, automation
+- [ ] Examples — Echo bot, customer support bot
+- [ ] Docs — API reference, troubleshooting, best practices
 
 ## Rate Limits & Constraints
 
 **Current Alpha Limits:**
+
 - 1 message per second
 - 1,000 messages per day  
 - 10,000 messages per month
 
 **Supported Countries:**
+
 - Nigeria (+234)
 - Kenya (+254)
 - Uganda (+256)
@@ -240,6 +199,7 @@ We welcome contributions! Please follow these steps:
 7. Submit a pull request
 
 ### Guidelines
+
 - Follow existing code style and structure
 - Include working examples for both languages
 - Add appropriate error handling
@@ -258,7 +218,7 @@ We welcome contributions! Please follow these steps:
 ## Support
 
 - **Documentation:** [openlyne.com/docs](https://openlyne.com/docs)
-- **Support Email:** sales@openlyne.com
+- **Support Email:** [sales@openlyne.com](mailto:sales@openlyne.com)
 - **WhatsApp Support:** 256XXXXXXXXXX
 - **Example Bot:** Send a message to 256XXXXXXXXXX
 
@@ -270,4 +230,4 @@ The Openlyne API has its own terms of service available at [openlyne.com/terms](
 
 ---
 
-**Questions?** Contact us at sales@openlyne.com or try our example bot at 256XXXXXXXXXX.
+**Questions?** Contact us at [sales@openlyne.com](mailto:sales@openlyne.com) or try our example bot at 256XXXXXXXXXX.
