@@ -68,7 +68,7 @@ response = requests.post(
         "Content-Type": "application/json"
     },
     json={
-    "phone_number": "256XXXXXXXXXX",
+    "number": "256XXXXXXXXXX",
         "message": "Hello from Openlyne!",
         "project_id": os.getenv("PROJECT_ID")
     }
@@ -87,7 +87,7 @@ async function sendMessage() {
         const response = await axios.post(
             'https://api.openlyne.com/v1/sendText',
             {
-                phone_number: '256XXXXXXXXXX',
+                number: '256XXXXXXXXXX',
                 message: 'Hello from Openlyne!',
                 project_id: process.env.PROJECT_ID
             },
@@ -145,7 +145,7 @@ curl -X POST "https://api.openlyne.com/v1/sendText" \
 - `POST /webhook` - Configure webhook for incoming messages
 
 ### Required Parameters
-- `phone_number` - Recipient's WhatsApp number in E.164 format
+- `number` - Recipient's WhatsApp number in E.164 format
 - `message` - Message content (text)
 - `project_id` - Your Openlyne project identifier
 
@@ -184,7 +184,7 @@ For complete API documentation, visit [openlyne.com/docs](https://openlyne.com/d
 
 ## Testing
 
-Try the example chatbot by sending a WhatsApp message to **256XXXXXXXXXX** to see how responses work in practice.
+Try the example chatbot by sending a WhatsApp message to **254101886585** to see how responses work in practice.
 
 ## Contributing
 
@@ -219,8 +219,8 @@ We welcome contributions! Please follow these steps:
 
 - **Documentation:** [openlyne.com/docs](https://openlyne.com/docs)
 - **Support Email:** [sales@openlyne.com](mailto:sales@openlyne.com)
-- **WhatsApp Support:** 256XXXXXXXXXX
-- **Example Bot:** Send a message to 256XXXXXXXXXX
+- **WhatsApp Support:** 254101886585
+- **Example Bot:** Send a message to 254101886585
 
 ## License
 
@@ -230,4 +230,22 @@ The Openlyne API has its own terms of service available at [openlyne.com/terms](
 
 ---
 
-**Questions?** Contact us at [sales@openlyne.com](mailto:sales@openlyne.com) or try our example bot at 256XXXXXXXXXX.
+**Questions?** Contact us at [sales@openlyne.com](mailto:sales@openlyne.com) or try our example bot at 254101886585.
+
+## ⚠️ Important Disclaimers & Legal Information
+
+**Development vs Production**: The tutorials use ngrok and other development tools that are **NOT suitable for production use**. Always use proper hosting and security measures for production deployments.
+
+**Example Phone Numbers**: All phone numbers shown (like `256XXXXXXXXXX`) are examples only and not real numbers. Always replace with your actual test numbers and obtain explicit consent before sending messages.
+
+**API Security**: Keep your API keys secure. Never commit them to version control or expose them in client-side code. Use environment variables and proper secret management.
+
+**Legal Compliance**: By using this API, you agree to:
+- [Openlyne Terms of Service](https://openlyne.com/terms)
+- [Openlyne Privacy Policy](https://openlyne.com/privacy)
+- WhatsApp Business API terms and policies
+- All applicable data protection laws (GDPR, CCPA, etc.)
+
+**User Consent**: Always obtain proper consent before sending WhatsApp messages. Respect user privacy and provide clear opt-out mechanisms.
+
+**Rate Limits**: Respect API rate limits. Exceeding limits may result in temporary or permanent suspension of your API access.

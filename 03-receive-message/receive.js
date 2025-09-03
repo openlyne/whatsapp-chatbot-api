@@ -17,6 +17,7 @@ app.post('/webhook', (req, res) => {
     
     // Add your response logic here
     // For example: send a reply, save to database, etc.
+    // Call the function send_text(data.key.remoteJid, "Hello from Openlyne!");
 
     res.json({ status: 'received' });
 });

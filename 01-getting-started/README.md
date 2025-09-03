@@ -17,6 +17,14 @@ Welcome! This guide helps you send your first WhatsApp message using the Openlyn
 - Text editor (VS Code recommended)
 - Openlyne API account ([sign up](https://openlyne.com))
 
+## ⚠️ Before You Start
+
+**Legal Requirements**: By proceeding, you acknowledge that you've read and agree to [Openlyne's Terms of Service](https://openlyne.com/terms) and [Privacy Policy](https://openlyne.com/privacy).
+
+**API Key Security**: Your API key is confidential. Never share it publicly, commit it to version control, or use it in client-side applications.
+
+**Example Data**: All phone numbers and data in this tutorial are examples only. Replace with your actual test data.
+
 ---
 
 ## 1. Get API Credentials
@@ -80,7 +88,7 @@ curl -X POST https://api.openlyne.com/v1/sendText \
     -H "x-api-key: your_api_key_here" \
     -H "Content-Type: application/json" \
     -d '{
-    "phone_number": "256XXXXXXXXXX",
+    "number": "256XXXXXXXXXX",
         "message": "Hello from my first WhatsApp bot!",
         "project_id": "your_project_id_here"
     }'
@@ -113,7 +121,7 @@ If there's an error:
 
 ## Example Bot
 
-Send a WhatsApp message to **256XXXXXXXXXX** to see a demo bot in action.
+Send a WhatsApp message to **254101886585** to see a demo bot in action.
 
 ---
 
@@ -146,5 +154,5 @@ Continue to [Tutorial 02: Send Messages](../02-send-messages/)
 ## Support
 
 - Email: sales@openlyne.com
-- WhatsApp: 256XXXXXXXXXX
+- WhatsApp: 254101886585
 - Docs: [openlyne.com/docs](https://openlyne.com/docs)

@@ -18,6 +18,16 @@ If you finished Tutorial 01, you’re ready. If not, start there first.
   ```
 - A WhatsApp number in E.164 format (example placeholder: 256XXXXXXXXXX)
 
+## ⚠️ Important: Message Consent & Compliance
+
+**Example Numbers Only**: The phone number `256XXXXXXXXXX` shown in examples is **NOT REAL**. Always replace with actual test numbers.
+
+**User Consent Required**: Only send messages to users who have explicitly consented to receive them. Unsolicited messages violate WhatsApp policies and may be illegal.
+
+**Rate Limits**: Respect API limits to avoid account suspension. Start with small test volumes.
+
+**Data Protection**: Ensure compliance with local privacy laws when handling user data and phone numbers.
+
 ---
 
 ## 1) Send with curl

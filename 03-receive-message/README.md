@@ -16,6 +16,16 @@ A simple server that:
 - Shows them in your terminal
 - Can be extended to send automatic replies
 
+## ⚠️ Development Environment Warning
+
+**ngrok is for Development Only**: This tutorial uses ngrok for testing purposes. **NEVER use ngrok or similar tunneling services in production environments** as they create security vulnerabilities.
+
+**Webhook Security**: The basic webhook example has no authentication. For production use, implement proper webhook signature verification and authentication.
+
+**Example Data**: Phone numbers like `256XXXXXXXXXX` in examples are placeholders only, not real numbers.
+
+**Production Deployment**: For production, use proper hosting services with SSL certificates, not development tunnels.
+
 ---
 
 ## Step 1: Install ngrok
@@ -119,7 +129,9 @@ You'll see: `🚀 Starting WhatsApp webhook server...`
 
 ## Step 3: Make Your Server Public with ngrok
 
-**Why ngrok?** Openlyne requires a secure HTTPS URL for webhooks. ngrok automatically provides this.
+**⚠️ DEVELOPMENT ONLY**: ngrok is a development tool. Never use it for production applications.
+
+**Why ngrok?** Openlyne requires a secure HTTPS URL for webhooks. ngrok automatically provides this **for testing purposes only**.
 
 ### Start ngrok
 
@@ -128,6 +140,8 @@ Open a **new terminal** (keep your server running in the first one) and run:
 ```bash
 ngrok http 8000
 ```
+
+**Security Warning**: This creates a public tunnel to your local machine. Only use this in development environments with test data.
 
 You'll see something like:
 
